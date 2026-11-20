@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="骐记待办（Keeji）隐私政策：说明本应用不收集个人数据，以及 iCloud、通知与订阅的处理方式。">
+  <meta name="description" content="骐记待办（Keeji）隐私政策：说明开发者不收集个人数据，以及本机日志、可选定位、语音转写、通知与 iCloud 同步的处理方式。">
   <title>隐私政策 / Privacy Policy · Keeji</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -24,7 +24,7 @@
 <article class="panel">
   <h1>骐记待办隐私政策 / Keeji Privacy Policy</h1>
   <div class="meta">
-    <p>生效日期 / Effective date：2026-11-17</p>
+    <p>生效日期 / Effective date：2026-11-20</p>
     <p>开发者 / Developer：裴川锋（个人开发者 / Individual developer）</p>
     <p>卖家名 / Seller name：裴川锋</p>
     <p>App：骐记待办（英文名：Keeji）</p>
@@ -42,17 +42,27 @@
 <ul><li>姓名、电子邮箱、电话号码、地址或其他身份信息（本应用不提供账号注册或登录）</li><li>设备标识符、广告标识符（IDFA）、精确位置或其他用于追踪的标识</li><li>使用分析、崩溃统计或行为数据</li><li>支付卡号、银行账户或 Apple ID 密码（订阅付款由 Apple 处理，见第 6 节）</li><li>你在本应用中创建的待办内容（开发者无法读取这些内容，见第 3、4 节）</li></ul>
 <p>因此，App Store 的 App 隐私标签建议选择 <strong>Data Not Collected（未收集数据）</strong>。若日后功能变化并开始收集数据，开发者将先更新本政策与 App Store 隐私标签，再发布相应版本。</p>
 <h3>3. 本机存储的数据</h3>
-<p>你创建的待办、看板状态、时间、专注计时记录、排序和设置等，默认保存在<strong>你的设备本地</strong>。这些数据用于本应用的核心功能，仅在你的设备上处理。</p>
-<ul><li>卸载本应用通常会删除设备上的本地数据。</li><li>开发者无法访问你设备上的本地数据。</li></ul>
+<p>你创建的待办、看板状态、时间、专注计时记录、骐记日志（含手写正文与自动记录的完成/计时事件）、排序和设置等，默认保存在<strong>你的设备本地</strong>。这些数据用于本应用的核心功能，仅在你的设备上处理。</p>
+<ul>
+<li>若你在设置中打开「记录事件地点」，完成待办或结束一次计入日志的计时时，本应用会申请「使用 App 期间」定位，仅获取<strong>一次</strong>当前位置并做一次反地理编码，把得到的<strong>地点名称</strong>写入该条事件。本应用<strong>不进行后台定位</strong>，<strong>不保存行动轨迹</strong>，也<strong>不保存经纬度坐标</strong>。拒绝、超时或无网络时，事件仍会保存，只是没有地点名称。</li>
+<li>你在骐记中添加的<strong>图片和语音录音仅保存在这台设备的本地沙盒</strong>，不会上传到开发者服务器，也不会经由开发者服务器中转。卸载本应用通常会删除这些本机文件。</li>
+<li>卸载本应用通常会删除设备上的本地数据。</li>
+<li>开发者无法访问你设备上的本地数据。</li>
+</ul>
 <h3>4. iCloud 同步（由 Apple 处理）</h3>
-<p>若你在设备上登录了 iCloud，并允许本应用使用 iCloud，本应用会通过 Apple 的 CloudKit <strong>私有库（Private Database）</strong>，将待办数据同步到你自己的 iCloud 账户，以便在你的多台 Apple 设备之间同步。</p>
+<p>若你在设备上登录了 iCloud，并允许本应用使用 iCloud，本应用会通过 Apple 的 CloudKit <strong>私有库（Private Database）</strong>，将待办以及骐记日志中的手写正文、事件记录（如完成与计时事件，以及你选择记录的地点名称）同步到你自己的 iCloud 账户，以便在你的多台 Apple 设备之间同步。日记中的图片和语音文件仍只保存在本机，不会随 CloudKit 上传。</p>
 <p>请注意：</p>
 <ul><li>同步使用的是<strong>你自己的 iCloud 账户</strong>，不是开发者的服务器。</li><li>CloudKit 私有库中的数据归属于你的 Apple ID，由 <strong>Apple 按照其隐私政策与 iCloud 条款</strong>进行处理。开发者<strong>无法访问、查看、导出或分享</strong>你的私有库内容。</li><li>是否启用 iCloud 由你决定。你可在系统设置中管理 iCloud，或关闭本应用的 iCloud 同步（以系统与本应用届时提供的开关为准）。关闭同步或退出 iCloud 后，本应用仍可在本机使用已保存在设备上的数据，但设备之间将不再通过 iCloud 同步。</li><li>如需删除已同步到 iCloud 的数据，你可通过系统的 iCloud 设置、iCloud 存储管理，或删除本应用的 iCloud 数据来处理（具体路径以 Apple 系统界面为准）。开发者没有一份可代为删除的云端副本。</li></ul>
 <p>关于 Apple 如何处理数据，请参阅：<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
 <p>按照 Apple《App 隐私详情》的说明：若你通过 Apple 的框架或服务（例如 CloudKit）使用功能，开发者只需申报<strong>自己收集</strong>的数据；<strong>无需申报由 Apple 收集的数据</strong>。本应用开发者并不从 CloudKit 收集或读取你的私有数据。</p>
-<h3>5. 通知权限的用途</h3>
-<p>本应用可在你设置了开始或截止时间时，使用 <strong>本地通知（Local Notifications）</strong> 在到点时提醒你。</p>
-<ul><li>本应用会请求系统的通知权限，<strong>仅用于上述到点提醒</strong>，不会用于营销、广告或与待办无关的推送。</li><li>这些通知在你的设备本地调度和展示，不经过开发者的服务器，开发者也不会因此获得你的通知内容或设备令牌（本应用不使用远程推送）。</li><li>通知权限是<strong>可选的</strong>。你可在系统设置中随时开启或关闭。拒绝通知权限不会阻止你使用本应用的其他功能（访问付费功能仍须具备有效的试用或订阅，见用户协议）。</li><li>本应用不会把付费功能绑定到「必须开启通知」。</li></ul>
+<h3>5. 通知与同步推送</h3>
+<p>本应用使用两类与推送相关的系统能力，都<strong>不用于营销或广告</strong>：</p>
+<ul>
+<li><strong>本地通知</strong>：在你设置了开始或截止时间时到点提醒；当次计时满 25 分钟时发出休息提醒；以及待办变为已暂停、已超时或已放弃时发出提醒。这些通知在你的设备本地调度和展示，不经过开发者的服务器，开发者也不会因此获得你的通知内容。</li>
+<li><strong>静默远程通知</strong>：本应用启用 <code>remote-notification</code> 后台模式，仅用于 Apple CloudKit 在你自己的设备之间同步私有库数据。这类通知是静默的数据同步，<strong>不会发送任何营销推送</strong>。开发者不把设备令牌用于自有推送服务。</li>
+<li>通知权限是<strong>可选的</strong>。你可在系统设置中随时开启或关闭。拒绝通知权限不会阻止你使用本应用的其他功能（访问付费功能仍须具备有效的试用或订阅，见用户协议）。关闭通知后，计时与日志功能仍可使用，只是可能收不到上述本地提醒。</li>
+<li>本应用不会把付费功能绑定到「必须开启通知」。</li>
+</ul>
 <h3>6. 订阅与付款（由 Apple 处理）</h3>
 <p>本应用仅提供自动续期订阅「骐记待办月度会员」，价格为 <strong>USD $2.99 / 月</strong>（以 App Store 显示的当地价格为准），新用户可免费试用 1 个月。</p>
 <ul><li>购买、试用、续费、取消、退款和发票均由 <strong>Apple</strong> 通过 App Store / StoreKit 处理，适用 Apple 的条款与政策。</li><li>开发者<strong>不会经手</strong>你的付款卡信息、银行账户或 Apple ID 密码，也不会另行建立一套支付系统。</li><li>开发者不会为处理付款而收集你的个人财务数据。Apple 可能按照其自身政策处理交易记录。</li></ul>
@@ -64,13 +74,21 @@
 <h3>8. 数据保留、删除与你的选择</h3>
 <p>因为开发者<strong>不收集、不存储</strong>你的个人数据，开发者这边没有一份可以按请求查阅、更正或删除的用户数据库。</p>
 <p>你仍可以自行管理数据：</p>
-<div class="table-wrap"><table><thead><tr><th>数据类型</th><th>如何处理</th></tr></thead><tbody><tr><td>本机待办与设置</td><td>在应用内编辑或删除；卸载应用通常会清除本机数据</td></tr><tr><td>iCloud 中的待办</td><td>通过你的 Apple ID / iCloud 设置管理或删除</td></tr><tr><td>通知权限</td><td>在系统设置中更改</td></tr><tr><td>订阅</td><td>在「设置 > Apple ID > 订阅」中管理或取消；退款向 Apple 申请</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>数据类型</th><th>如何处理</th></tr></thead><tbody><tr><td>本机待办、设置、骐记日志、图片与语音</td><td>在应用内编辑或删除；卸载应用通常会清除本机数据</td></tr><tr><td>iCloud 中的待办与日志事件</td><td>通过你的 Apple ID / iCloud 设置管理或删除</td></tr><tr><td>通知、定位、相册、麦克风、语音识别等权限</td><td>在系统设置中更改；核心待办功能不依赖定位、相册或麦克风</td></tr><tr><td>订阅</td><td>在「设置 > Apple ID > 订阅」中管理或取消；退款向 Apple 申请</td></tr></tbody></table></div>
 <p>如你联系开发者提出查阅、删除或其他隐私请求，我们将说明上述情况，并在合理范围内协助你了解如何自行处理本机或 iCloud 中的数据。由于开发者不持有你的个人数据，通常无法直接从开发者侧删除一份「账户档案」。</p>
 <h3>9. 儿童</h3>
 <p>本应用面向一般用户，不是「儿童」类别（Made for Kids）应用，也不专门面向儿童收集数据。开发者<strong>不会故意收集</strong>任何儿童的个人数据。本应用不要求注册，开发者也没有用户账户数据库。</p>
 <p>若你是家长或监护人，并认为儿童向开发者提供了个人数据，请通过下方邮箱联系我们，我们将配合处理。请注意：儿童如在设备上创建待办或开启 iCloud 同步，相关内容保存在该设备及（如已开启）该 Apple ID 的 iCloud 中，由你和 Apple 的家庭与隐私控制进行管理。</p>
 <h3>10. 权限与最小化</h3>
-<p>本应用仅在实现功能所必需时请求系统权限。目前预期请求的权限主要是<strong>通知权限</strong>（用于到点提醒）。本应用不要求你为了使用核心待办功能而开放通讯录、相册、麦克风、定位或其他不相关权限。若后续版本需要新的权限，将在系统弹窗中说明用途，并更新本政策。</p>
+<p>本应用仅在实现相应功能所需要时请求系统权限，且除通知外，下列权限都是<strong>可选的</strong>，不开放它们也能使用核心待办看板：</p>
+<ul>
+<li><strong>通知</strong>：用于第 5 节所述的本地提醒；静默 CloudKit 同步不向你展示营销通知。</li>
+<li><strong>定位（使用 App 期间）</strong>：仅在你主动打开「记录事件地点」后，于完成待办或结束计入日志的计时时，获取一次当前位置并转换成地点名称。不申请「始终」定位，不后台追踪，不保存轨迹或坐标。</li>
+<li><strong>相册</strong>：仅在你主动向骐记日记添加图片时使用。</li>
+<li><strong>麦克风</strong>：仅在你主动录制语音日志时使用。录音只保存在本机。</li>
+<li><strong>语音识别</strong>：仅在你主动把语音转成文字时，本应用会调用 Apple 的语音识别（<code>SFSpeechRecognizer</code>）。音频由 <strong>Apple 按其隐私政策</strong>处理；开发者不存储、不获取、也不转发该音频。关于 Apple 如何处理语音数据，请参阅 Apple 的隐私政策。</li>
+</ul>
+<p>本应用不要求访问通讯录或其他与上述功能无关的权限。若后续版本需要新的权限，将在系统弹窗中说明用途，并更新本政策。</p>
 <h3>11. 政策变更</h3>
 <p>如本政策发生变更，开发者将更新本页面的生效日期，并在适当时通过 App Store 产品页、应用内说明或新版本更新说明告知。若变更涉及开始收集个人数据，将在收集前更新本政策与 App Store 隐私标签。请定期查阅本页面以了解最新做法。</p>
 <h3>12. 联系我们</h3>
@@ -88,17 +106,27 @@
 <ul><li>Name, email address, phone number, postal address, or other identity information (the App has no sign-up or sign-in)</li><li>Device identifiers, advertising identifiers (IDFA), precise location, or other identifiers used for tracking</li><li>Usage analytics, crash statistics, or behavioral data</li><li>Payment card numbers, bank account details, or Apple ID passwords (subscription payments are processed by Apple; see Section 6)</li><li>The to-do content you create in the App (the developer cannot read this content; see Sections 3 and 4)</li></ul>
 <p>Accordingly, the App Store App Privacy label should be set to <strong>Data Not Collected</strong>. If future features change this practice, the developer will update this Policy and the App Privacy label before releasing that version.</p>
 <h3>3. Data stored on your device</h3>
-<p>The to-dos, board status, dates and times, focus-timer records, sort order, and settings you create are stored <strong>locally on your device</strong> by default. This information is used only to provide the App’s core features and is processed on your device.</p>
-<ul><li>Deleting the App typically removes local data stored on that device.</li><li>The developer cannot access data stored locally on your device.</li></ul>
+<p>The to-dos, board status, dates and times, focus-timer records, journal entries (including handwritten text and automatically recorded completion and timer events), sort order, and settings you create are stored <strong>locally on your device</strong> by default. This information is used only to provide the App’s core features and is processed on your device.</p>
+<ul>
+<li>If you turn on “Record event location” in Settings, then when you complete a to-do or finish a journaled timer, the App asks for <strong>When In Use</strong> location permission, takes <strong>one</strong> current location fix, reverse-geocodes it once, and stores the resulting <strong>place name</strong> on that event. The App does <strong>not</strong> perform background location, does <strong>not</strong> save a movement trail, and does <strong>not</strong> store coordinates. If you deny permission, the request times out, or there is no network, the event is still saved, just without a place name.</li>
+<li>Photos and voice recordings you add to the journal are stored <strong>only in the App’s sandbox on that device</strong>. They are not uploaded to a developer-operated server and are not relayed through one. Deleting the App typically removes these local files.</li>
+<li>Deleting the App typically removes local data stored on that device.</li>
+<li>The developer cannot access data stored locally on your device.</li>
+</ul>
 <h3>4. iCloud sync (processed by Apple)</h3>
-<p>If you are signed in to iCloud on your device and allow the App to use iCloud, the App may sync your to-do data to <strong>your own iCloud account</strong> using Apple’s CloudKit <strong>private database</strong>, so the data can appear across your Apple devices.</p>
+<p>If you are signed in to iCloud on your device and allow the App to use iCloud, the App may sync your to-dos and journal text and events (including completion and timer events, and any place names you chose to record) to <strong>your own iCloud account</strong> using Apple’s CloudKit <strong>private database</strong>, so that data can appear across your Apple devices. Journal photos and voice recordings remain on the device and are not uploaded through CloudKit.</p>
 <p>Please note:</p>
 <ul><li>Sync uses <strong>your iCloud account</strong>, not a server operated by the developer.</li><li>Data in the CloudKit private database belongs to your Apple ID and is processed by <strong>Apple under Apple’s Privacy Policy and iCloud terms</strong>. The developer <strong>cannot access, view, export, or share</strong> the contents of your private database.</li><li>iCloud sync is optional. You can manage iCloud in system Settings or turn off iCloud sync for the App (as available in the system or in the App at the time). If you turn off sync or sign out of iCloud, the App can still use data already stored on the device, but devices will no longer sync through iCloud.</li><li>To delete data already synced to iCloud, use your iCloud settings, iCloud storage management, or delete the App’s iCloud data (follow the paths shown in Apple’s system interface). The developer does not hold a separate cloud copy that can be deleted on your behalf.</li></ul>
 <p>For information about how Apple handles data, see: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
 <p>Apple’s App Privacy Details state that if you use Apple frameworks or services (such as CloudKit), you should disclose data <strong>you</strong> collect; you are <strong>not responsible for disclosing data collected by Apple</strong>. The developer does not collect or read your private CloudKit data.</p>
-<h3>5. How notification permission is used</h3>
-<p>The App may use <strong>local notifications</strong> to remind you when a start time or due time you set arrives.</p>
-<ul><li>The App requests notification permission <strong>only for these on-time reminders</strong>. It is not used for marketing, advertising, or unrelated push messages.</li><li>These notifications are scheduled and displayed on your device. They do not pass through a developer-operated server, and the developer does not receive your notification content or a device push token (the App does not use remote push notifications).</li><li>Notification permission is <strong>optional</strong>. You can turn it on or off in system Settings. Declining permission does not prevent you from using the App’s other features (access to paid features still requires an active trial or subscription, as described in the Terms of Use).</li><li>Paid features are not conditioned on granting notification permission.</li></ul>
+<h3>5. Notifications and sync push</h3>
+<p>The App uses two system capabilities related to notifications. Neither is used for marketing or advertising:</p>
+<ul>
+<li><strong>Local notifications</strong> remind you when a start or due time you set arrives; when the current timer reaches 25 minutes (a break reminder); and when a to-do becomes paused, overdue, or abandoned. These notifications are scheduled and displayed on your device. They do not pass through a developer-operated server, and the developer does not receive your notification content.</li>
+<li><strong>Silent remote notifications</strong>: the App enables the <code>remote-notification</code> background mode solely so Apple CloudKit can sync your private database across your own devices. These notifications are silent data-sync messages and are <strong>not used to send marketing pushes</strong>. The developer does not use device tokens for a first-party push service.</li>
+<li>Notification permission is <strong>optional</strong>. You can turn it on or off in system Settings. Declining permission does not prevent you from using the App’s other features (access to paid features still requires an active trial or subscription, as described in the Terms of Use). If you turn notifications off, timers and the journal still work; you may simply not receive the local reminders above.</li>
+<li>Paid features are not conditioned on granting notification permission.</li>
+</ul>
 <h3>6. Subscriptions and payments (processed by Apple)</h3>
 <p>The App offers a single auto-renewable subscription, “骐记待办月度会员” (Keeji Monthly Membership), at <strong>USD $2.99 per month</strong> (or the equivalent localized price shown on the App Store). New subscribers may use a <strong>one-month free trial</strong>.</p>
 <ul><li>Purchase, trial, renewal, cancellation, refunds, and invoices are processed by <strong>Apple</strong> through the App Store / StoreKit, subject to Apple’s terms and policies.</li><li>The developer <strong>does not receive</strong> your payment card details, bank account information, or Apple ID password, and does not operate a separate payment system.</li><li>The developer does not collect your financial personal data in order to process payment. Apple may process transaction records under its own policies.</li></ul>
@@ -110,13 +138,21 @@
 <h3>8. Retention, deletion, and your choices</h3>
 <p>Because the developer <strong>does not collect or store</strong> your personal data, the developer does not maintain a user database that can be accessed, corrected, or deleted on request.</p>
 <p>You can still manage your data yourself:</p>
-<div class="table-wrap"><table><thead><tr><th>Type of data</th><th>How to manage it</th></tr></thead><tbody><tr><td>Local to-dos and settings</td><td>Edit or delete them in the App; deleting the App typically clears local data</td></tr><tr><td>To-dos in iCloud</td><td>Manage or delete them through your Apple ID / iCloud settings</td></tr><tr><td>Notification permission</td><td>Change it in system Settings</td></tr><tr><td>Subscription</td><td>Manage or cancel in Settings > Apple ID > Subscriptions; request refunds from Apple</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Type of data</th><th>How to manage it</th></tr></thead><tbody><tr><td>Local to-dos, settings, journal text, photos, and voice recordings</td><td>Edit or delete them in the App; deleting the App typically clears local data</td></tr><tr><td>To-dos and journal events in iCloud</td><td>Manage or delete them through your Apple ID / iCloud settings</td></tr><tr><td>Notification, location, Photos, microphone, and speech-recognition permissions</td><td>Change them in system Settings; core to-do features do not require location, Photos, or the microphone</td></tr><tr><td>Subscription</td><td>Manage or cancel in Settings > Apple ID > Subscriptions; request refunds from Apple</td></tr></tbody></table></div>
 <p>If you contact the developer with an access, deletion, or other privacy request, we will explain the above and, where reasonable, help you understand how to manage data on your device or in iCloud. Because the developer does not hold your personal data, we generally cannot delete an “account file” on the developer’s side.</p>
 <h3>9. Children</h3>
 <p>The App is intended for a general audience. It is not a Made for Kids app and is not directed at collecting data from children. The developer <strong>does not knowingly collect</strong> personal data from children. The App does not require registration, and the developer has no user-account database.</p>
 <p>If you are a parent or guardian and believe a child has provided personal data to the developer, please contact us at the email below and we will help address it. If a child creates to-dos on a device or enables iCloud sync, that content remains on the device and, if enabled, in that Apple ID’s iCloud, and is managed through your and Apple’s family and privacy controls.</p>
 <h3>10. Permissions and data minimization</h3>
-<p>The App requests system permissions only when needed for a feature. The permission expected at launch is <strong>notification permission</strong> (for on-time reminders). The App does not require access to Contacts, Photos, the microphone, Location, or other unrelated resources in order to use its core to-do features. If a later version needs a new permission, the system prompt will explain the purpose, and this Policy will be updated.</p>
+<p>The App requests system permissions only when needed for a feature. Apart from notifications, the following permissions are <strong>optional</strong>; you can use the core to-do board without granting them:</p>
+<ul>
+<li><strong>Notifications</strong>: for the local reminders described in section 5. Silent CloudKit sync does not present marketing notifications.</li>
+<li><strong>Location (When In Use)</strong>: only after you turn on “Record event location,” and only to take one current fix and convert it to a place name when you complete a to-do or finish a journaled timer. The App does not request Always location, does not track in the background, and does not store a trail or coordinates.</li>
+<li><strong>Photos</strong>: only when you choose to add an image to a journal entry.</li>
+<li><strong>Microphone</strong>: only when you choose to record a voice note. Recordings stay on the device.</li>
+<li><strong>Speech recognition</strong>: only when you choose to transcribe a voice note. The App then calls Apple’s speech recognition (<code>SFSpeechRecognizer</code>). The audio is processed by <strong>Apple under Apple’s Privacy Policy</strong>. The developer does not store, receive, or relay that audio. See Apple’s Privacy Policy for how Apple handles speech data.</li>
+</ul>
+<p>The App does not require access to Contacts or other resources unrelated to the features above. If a later version needs a new permission, the system prompt will explain the purpose, and this Policy will be updated.</p>
 <h3>11. Changes to this Policy</h3>
 <p>If this Policy changes, the developer will update the effective date on this page and, where appropriate, provide notice via the App Store product page, an in-app notice, or the “What’s New” text for a new version. If a change involves starting to collect personal data, this Policy and the App Privacy label will be updated before that collection begins. Please review this page periodically.</p>
 <h3>12. Contact</h3>
